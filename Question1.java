@@ -1,24 +1,21 @@
-package LINKEDLISTQUESTION;
+package Array2D;
 
 public class Question1 {
-    public static class Node{
-        int data;
-        Node next;
-        Node(int data){
-            this.data=data;
-        }
-    }
     public static void main(String[] args) {
-        Node a = new Node(5);
-        Node b = new Node(8);
-        Node c = new Node(3);
-        a.next=b;
-        b.next=c;
-        Node temp= a;
-        for(int i=1;i<=3;i++){
-            System.out.println(temp.data);
-            temp=temp.next;
+        int[] m = new int[10];
+        int[] n = new int[10];
+        for (int i = 0; i < 10; i++) {
+            m[i] = i + 1;
+            n[i] = i + 1;
         }
+        for(int i=0;i<10;i++){
+            for(int j=0;j<10;j++){
+                int  total =n[i]*m[j];
+                System.out.print(total+" ");
+            }
+            System.out.println();
+        }
+
 
     }
 }
